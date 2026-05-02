@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Auction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-xl shadow-lg w-96">
+
+    <h1 class="text-2xl font-bold mb-6 text-center">Create Auction</h1>
+
+    <input id="itemName"
+           class="w-full p-2 border rounded mb-3"
+           placeholder="Item Name">
+
+    <input id="price"
+           class="w-full p-2 border rounded mb-3"
+           placeholder="Starting Price"
+           type="number">
+
+    <input type="datetime-local" id="endTime" class="w-full p-2 border rounded mb-4">
+
+    <button onclick="createAuction()"
+            class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700">
+        Create Auction
+    </button>
+
+    <button onclick="goBack()"
+            class="w-full mt-2 bg-gray-300 p-2 rounded">
+        Back
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    function goBack() {
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+</body>
+</html>
